@@ -6,7 +6,7 @@ This program counts entry/exit of person. The detection of person is based on de
 
 <img src="img/personCounter.gif" alt="drawing" width="320"/>
 
-### Importance
+## Importance
 It can count all the people who enter/exit pre-arranged area. The final goal of this project is to integrate it with CCTV server to inform supervisors how many people are staying in the rooms, or have entry/exit some areas. For example, it will be really helpful for fully-automated hotels (자동 호텔, 무인텔).
 <br/>
  - The stage of this project <br/>
@@ -46,11 +46,15 @@ It can count all the people who enter/exit pre-arranged area. The final goal of 
 
 ## Result
 ### Single camera
-The video source can be IP camera, webcam and etc... __I used my custom model to detect person. With RTX 2080Ti, the frame rate of entire program (with showing the images, by cv2.imshow()) is 20 fps.__
+The video source can be IP camera, webcam and etc... With RTX 2080Ti, the original frame rate of entire program (with showing the images, by cv2.imshow()) was 12 fps.
+
 <img src="gif/single_camera_test_1.gif" alt="drawing" width="480"/>
 <img src="gif/single_camera_test_2.gif" alt="drawing" width="480"/>
 
+__I had updated my custom model to detect person. With RTX 2080Ti, the frame rate of entire program  is 20 fps.__
+<img src="gif/single_camera_test_3.gif" alt="drawing" width="480"/>
+
 ### Multiple camera
 It supports multiple cameras by multi processing. With RTX 2080Ti, it can run up to 16 video sources.
-<img src="gif/multiple_camera_test.gif" alt="drawing" width="480"/>
+<img src="gif/multi_camera_test.gif" alt="drawing" width="480"/>
 
