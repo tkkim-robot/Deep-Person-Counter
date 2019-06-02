@@ -4,7 +4,7 @@ PersonCounter
 ## About PersonCounter
 This program counts entry/exit of person. The detection of person is based on deep learning method. Extended Kalman Filter is used to tracking, and self-implemented codes to count entry/exit. Finally, sends the data to the API server.
 
-<img src="img/personCounter.gif" alt="drawing" width="320"/>
+<img src="img/personCounter.png" alt="drawing" width="320"/>
 
 ## Importance
 It can count all the people who enter/exit pre-arranged area. The final goal of this project is to integrate it with CCTV server to inform supervisors how many people are staying in the rooms, or have entry/exit some areas. For example, it will be really helpful for fully-automated hotels (자동 호텔, 무인텔).
