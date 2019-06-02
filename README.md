@@ -2,30 +2,55 @@ PersonCounter
 ===
 
 ## About PersonCounter
+This program counts entry/exit of person. The detection of person is based on deep learning method. Extended Kalman Filter is used to tracking, and self-implemented codes to count entry/exit. Finally, sends the data to the API server.
 
-<img src="gif/MORP.gif" alt="drawing" width="480"/>
+<img src="img/personCounter.gif" alt="drawing" width="320"/>
 
-<p float="left">
-  <img src="img/milestone.png" alt="drawing" width="320"/>
-  <img src="img/MORP.png" alt="drawing" width="320"/>
-</p>
+### Importance
+It can count all the people who enter/exit pre-arranged area. The final goal of this project is to integrate it with CCTV server to inform supervisors how many people are staying in the rooms, or have entry/exit some areas. For example, it will be really helpful for fully-automated hotels (자동 호텔, 무인텔).
+<br/>
+ - The stage of this project <br/>
+    - [ ] Foster Ideas
+    - [ ] Focus Ideas
+    - [ ] Develop Ideas
+    - [X] Prototypes and Trials
+    - [ ] Product Development Activities
+    - [ ] Launch
+    
+ - Goal
+    - The final goal of this project
+        - Auto Person Counter development ([TRL](https://itec.etri.re.kr/itec/sub01/sub01_07.do) : 3 ~ 5)
+        - Integrate with CCTV server to count entry/exit. 
+        - Display the result on web or mobile applications.
+        
+ - Keywards
+    - Object Detection
+    - Deep Learning
+    - Extended Kalman Filter
+    - Tracking
+    - Computer Vision
+    - API Integration
+  
+- Environment
+    - _SOFTWARE_
+      - Python 3.6
+      - CUDA 9.0
+      - CuDNN 7.0.5
+      - tensorflow-gpu 1.5.0
+      - OpenCV 3.4.3.18
+      - keras
+      - pillow, sklearn etc...
+      - Ubuntu 16.04 LTS, Window 10
+    - _HARDWARE_
+      - Any PC contains GPU supports CUDA 9.0
 
-## Dependency
-```bash
-import pyrealsense2 as rs
-import numpy as np
-import cv2
-import matplotlib.pyplot as plt
-import math
-import time #if you want to see FPS
-import easyGo #if you want to move the robot
-```
+## Result
+### Single camera
+The video source can be IP camera, webcam and etc... __I used my custom model to detect person. With RTX 2080Ti, the frame rate of entire program (with showing the images, by cv2.imshow()) is 20 fps.__
+<img src="gif/single_camera_test_1.gif" alt="drawing" width="480"/>
+<img src="gif/single_camera_test_2.gif" alt="drawing" width="480"/>
 
-## How to import MORP (D435i is needed) ![build badge](https://img.shields.io/badge/build-passing-green.svg)
-go to source [./ground_seg.py](./ground_seg.py)
-
-```bash
-#if ground_seg.py is in the same folder
-import ground_seg
-```
+### Multiple camera
+It supports multiple cameras by multi processing. With RTX 2080Ti, it can run up to 16 video sources.
+<img src="gif/multiple_camera_test.gif" alt="drawing" width="480"/>
 
