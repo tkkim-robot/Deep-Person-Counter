@@ -58,3 +58,6 @@ __I had updated my custom model to detect person. With RTX 2080Ti, the frame rat
 It supports multiple cameras by multi processing. With RTX 2080Ti, it can run up to 16 video sources.
 <img src="gif/multi_camera_test.gif" alt="drawing" width="480"/>
 
+## Source Code
+The entire project is funded by Oasys Story. __The all copyrights are reserved to Oasys Story (2019).__
+<http://www.oasyss.co.kr>
