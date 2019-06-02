@@ -59,5 +59,5 @@ It supports multiple cameras by multi processing. With RTX 2080Ti, it can run up
 <img src="gif/multi_camera_test.gif" alt="drawing" width="480"/>
 
 ## Source Code
-The entire project is funded by Oasys Story. __The all copyrights are reserved to Oasys Story (2019).__
+The entire project is funded by Oasys Story. The source code coult not be open.  __The all copyrights are reserved to Oasys Story (2019).__
 <http://www.oasyss.co.kr>
