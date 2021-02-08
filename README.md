@@ -23,7 +23,7 @@ It can count all the people who enter/exit pre-arranged area. The final goal of 
         - Integrate with CCTV server to count entry/exit. 
         - Display the result on web or mobile applications.
         
- - Keywards
+ - Keywords
     - Object Detection
     - Deep Learning
     - Extended Kalman Filter
